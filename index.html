@@ -2,12 +2,13 @@
 <html>
    <head>
       <title>Some Cool Space Stuff by Zach Fouts</title>
+      <link rel="stylesheet" type="text/css" href="./styles.css">
    </head>
    <body>
 
 
       <header>
-         <h1>Space</h1>
+         <h1 id="mainHeading">Space</h1>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas congue quisque egestas diam in arcu cursus. Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Penatibus et magnis dis parturient. Mi bibendum neque egestas congue quisque egestas. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Massa id neque aliquam vestibulum morbi blandit cursus risus. Congue nisi vitae suscipit tellus. Sit amet volutpat consequat mauris nunc congue nisi. Lorem sed risus ultricies tristique nulla aliquet enim. Ultricies mi eget mauris pharetra et ultrices. Condimentum vitae sapien pellentesque habitant morbi tristique. Commodo viverra maecenas accumsan lacus.</p>
          <nav>
             <ul>
@@ -24,30 +25,38 @@
          <section>
          <h2 id="black-hole">Visualization of a Black Hole</h2>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et. Mi bibendum neque egestas congue quisque egestas diam in. Elementum nisi quis eleifend quam adipiscing vitae. Bibendum at varius vel pharetra vel turpis nunc eget lorem. Amet consectetur adipiscing elit ut aliquam purus sit amet luctus. Mi quis hendrerit dolor magna eget est lorem ipsum dolor. Mauris sit amet massa vitae tortor. Nunc mattis enim ut tellus elementum. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Tincidunt id aliquet risus feugiat.</p>
-         <video src="./images/black-hole.mp4" alt="Visualization of a black hole" autoplay loop></video>
-            <p><cite><a href="https://www.nasa.gov/feature/goddard/2019/nasa-visualization-shows-a-black-hole-s-warped-world">&copyNASA</a></cite>, 2019</p>
+         <video src="./images/black-hole.mp4" alt="Visualization of a black hole" class="image" id="black-hole" autoplay loop></video>
+            <p class="cite"><cite><a href="https://www.nasa.gov/feature/goddard/2019/nasa-visualization-shows-a-black-hole-s-warped-world">&copyNASA</a></cite>, 2019</p>
          
          </section>
 
       <section>
          <h2 id="hourglass">Hourglass Nebula</h2>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra. Fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Non arcu risus quis varius quam quisque id diam vel. Ultrices dui sapien eget mi proin sed libero enim. Arcu felis bibendum ut tristique et egestas. Neque laoreet suspendisse interdum consectetur libero. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Morbi blandit cursus risus at. Erat velit scelerisque in dictum non.</p>
-         <img src="./images/hourglass-nebula.webp" alt="">
-         <p><cite><a href="https://www.jpl.nasa.gov/images/pia14442-hubble-finds-an-hourglass-nebula-around-a-dying-star">&copyNASA</a></cite>, Hubble Telescope, 1996.</p>
+         <p class="funParagraph" id="testP">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra. Fringilla est ullamcorper eget nulla facilisi etiam dignissim diam. Non arcu risus quis varius quam quisque id diam vel. Ultrices dui sapien eget mi proin sed libero enim. Arcu felis bibendum ut tristique et egestas. Neque laoreet suspendisse interdum consectetur libero. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Morbi blandit cursus risus at. Erat velit scelerisque in dictum non.</p>
+         
+         
+         <div class="container">
+         <img src="./images/hourglass-nebula.webp"  alt="" class="image" id="hourglass-img" >
+         <div class="bottomLeft">
+         bottomLeft
+         </div>         
+         <p class="cite"><cite><a href="https://www.jpl.nasa.gov/images/pia14442-hubble-finds-an-hourglass-nebula-around-a-dying-star">&copyNASA</a></cite>, Hubble Telescope, 1996.</p>
+         </div>
+      
       </section>
 
       <section>
          <h2 id="orion-sword">Infrared of Orion Sword</h2>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris rhoncus aenean vel elit scelerisque mauris. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Justo eget magna fermentum iaculis eu non diam phasellus. Mattis vulputate enim nulla aliquet porttitor lacus luctus. Aliquet nibh praesent tristique magna sit amet purus gravida. Tincidunt augue interdum velit euismod in pellentesque massa placerat duis. Posuere morbi leo urna molestie at elementum eu. Leo vel orci porta non pulvinar neque. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat in. Suspendisse potenti nullam ac tortor. Tempor nec feugiat nisl pretium fusce id. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Lectus quam id leo in vitae turpis massa sed. Purus viverra accumsan in nisl nisi scelerisque. Cras sed felis eget velit aliquet sagittis id. In arcu cursus euismod quis viverra nibh cras. Est sit amet facilisis magna etiam tempor orci eu. Non curabitur gravida arcu ac tortor dignissim convallis.</p>
-         <img src="./images/orion-sword.jpeg" alt="The last photo transmitted from the Cassini spacecraft before crashing into Saturn">
-         <p><cite><a href="https://images.nasa.gov/details-PIA08656">&copyNASA</a></cite>, 2006</p>
+         <img src="./images/orion-sword.jpeg" alt="The last photo transmitted from the Cassini spacecraft before crashing into Saturn" class="image" id="orion">
+         <p class="cite"><cite><a href="https://images.nasa.gov/details-PIA08656">&copyNASA</a></cite>, 2006</p>
       </section>
 
       <section>
          <h2 id="saturn">Saturn, as seen in Ultraviolet</h2>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Mauris sit amet massa vitae tortor condimentum lacinia. Vel orci porta non pulvinar neque. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc. Ac tortor dignissim convallis aenean. Sollicitudin tempor id eu nisl nunc mi ipsum. Sit amet est placerat in egestas erat imperdiet sed. Nunc non blandit massa enim nec dui. In hac habitasse platea dictumst quisque sagittis purus sit amet. Convallis aenean et tortor at. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat. Lacus luctus accumsan tortor posuere ac ut consequat. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Magna sit amet purus gravida. Sem integer vitae justo eget magna fermentum. In mollis nunc sed id semper risus in hendrerit. Cras sed felis eget velit aliquet sagittis. Lacinia quis vel eros donec ac.</p>
-         <img src="./images/saturn-ultraviolet.jpeg" alt="Saturn going through a phase in the 1980s">
-         <p><cite><a href="https://www.nasa.gov/multimedia/imagegallery/image_feature_1074.html">&copyNASA</a></cite>, 2008</p>
+         <img src="./images/saturn-ultraviolet.jpeg" alt="Saturn going through a phase in the 1980s" class="image" id="saturn-img">
+         <p class="cite"><cite><a href="https://www.nasa.gov/multimedia/imagegallery/image_feature_1074.html">&copyNASA</a></cite>, 2008</p>
          </section>
       </article>
    </main> 

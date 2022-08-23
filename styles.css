@@ -1,1 +1,63 @@
-/* Write your CSS here! */
+
+
+
+body  {
+    background-image: url(./images/orion-nebula.jpeg), linear-gradient(black, rgb(5, 5, 62));
+    background-image: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: whitesmoke;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+}
+#mainHeading {
+    color: red;
+}
+h2 {
+    text-align: center;
+}
+p {
+    text-align: left;
+    margin: 80px;
+}
+.cite {
+    text-align: center;
+    margin: 0 auto;
+    
+
+}
+
+.image {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 40px;
+}
+
+#hourglass-img {
+    width: 50%;
+}
+
+#orion {
+    width: 70%;
+}
+
+#saturn-img {
+    width: 70%;
+}
+.funParagraph {
+    color: green;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .bottomLeft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
