@@ -8,7 +8,7 @@ body  {
     background-size: cover;
     background-attachment: fixed;
     color: whitesmoke;
-    margin: auto;
+    margin: 8px;
 }
 h1 {
     text-align: center;
@@ -21,7 +21,8 @@ h2 {
 }
 p {
     text-align: left;
-    margin: 80px;
+    margin: 10px;
+    padding-bottom: 30px;
 }
 .cite {
     text-align: center;
@@ -34,7 +35,7 @@ p {
     display: block;
     margin: 0 auto;
     position: relative;
-    padding-left: 40px;
+
 }
 
 #hourglass-img {

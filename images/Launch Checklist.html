@@ -1,0 +1,82 @@
+
+<!-- saved from url=(0068)http://127.0.0.1:5501/?pilotName=&copilotName=&fuelLevel=&cargoMass= -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Launch Checklist</title>
+        <link rel="stylesheet" type="text/css" href="./Launch Checklist_files/styles.css">
+        <script src="./Launch Checklist_files/scriptHelper.js"></script>
+        <script src="./Launch Checklist_files/script.js"></script>
+        <script src="./Launch Checklist_files/bundle.js"></script>
+    </head>
+    <body>
+        <h1>Launch Checklist Form</h1>
+        <div id="missionTarget" data-testid="missionTarget">
+            <!-- Fetch some planetary data -->
+        </div>  
+        <div id="launchForm">
+            <form data-testid="testForm">
+                <div class="formField">
+                    <label>Pilot Name <input type="text" name="pilotName" id="pilotName"></label>
+                </div>
+                <div class="formField">
+                    <label>Co-pilot Name <input type="text" name="copilotName"></label>
+                </div>
+                <div class="formField">
+                    <label>Fuel Level (L) <input type="text" name="fuelLevel"></label> 
+                </div>
+                <div class="formField">
+                    <label>Cargo Mass (kg) <input type="text" name="cargoMass"></label>
+                </div>
+                <button id="formSubmit">Submit</button>
+            </form>
+        </div>
+        <div id="launchStatusCheck">
+            <h2 id="launchStatus" data-testid="launchStatus">Awaiting Information Before Launch</h2>
+            <div id="faultyItems" data-testid="faultyItems">
+                <ol>
+                    <li id="pilotStatus" data-testid="pilotStatus">Pilot Ready</li>
+                    <li id="copilotStatus" data-testid="copilotStatus">Co-pilot Ready</li>
+                    <li id="fuelStatus" data-testid="fuelStatus">Fuel level high enough for launch</li>
+                    <li id="cargoStatus" data-testid="cargoStatus">Cargo mass low enough for launch</li>
+                </ol>
+            </div>
+        </div>
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
